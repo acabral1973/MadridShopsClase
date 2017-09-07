@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA0136D71F61E13700A720F2 /* DownloadAllShopsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0136D61F61E13700A720F2 /* DownloadAllShopsInteractor.swift */; };
+		BA0136D91F61EA6B00A720F2 /* DownloadAllShopsInteractorFakeImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0136D81F61EA6B00A720F2 /* DownloadAllShopsInteractorFakeImpl.swift */; };
+		BA0136DC1F61F54800A720F2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA0136DB1F61F54800A720F2 /* MapKit.framework */; };
+		BA0136DE1F61F6E300A720F2 /* ViewController+CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0136DD1F61F6E300A720F2 /* ViewController+CollectionViewController.swift */; };
+		BA0136E01F61FA2400A720F2 /* ShopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0136DF1F61FA2400A720F2 /* ShopCell.swift */; };
+		BA66611D1F61D00E0023C003 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA66611C1F61D00E0023C003 /* AppDelegate.swift */; };
+		BA66611F1F61D00E0023C003 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA66611E1F61D00E0023C003 /* ViewController.swift */; };
+		BA6661221F61D00E0023C003 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA6661201F61D00E0023C003 /* Main.storyboard */; };
+		BA6661241F61D00E0023C003 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA6661231F61D00E0023C003 /* Assets.xcassets */; };
+		BA6661271F61D00E0023C003 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA6661251F61D00E0023C003 /* LaunchScreen.storyboard */; };
+		BA6661401F61D2E20023C003 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA66613F1F61D2E20023C003 /* Shop.swift */; };
+		BA6661421F61D6BD0023C003 /* Shops.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6661411F61D6BD0023C003 /* Shops.swift */; };
+		BA6661451F61DA8F0023C003 /* ShopsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6661441F61DA8F0023C003 /* ShopsTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BA66612E1F61D00E0023C003 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA6661111F61D00E0023C003 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA6661181F61D00E0023C003;
+			remoteInfo = MadridShops;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BA0136D61F61E13700A720F2 /* DownloadAllShopsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAllShopsInteractor.swift; sourceTree = "<group>"; };
+		BA0136D81F61EA6B00A720F2 /* DownloadAllShopsInteractorFakeImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAllShopsInteractorFakeImpl.swift; sourceTree = "<group>"; };
+		BA0136DB1F61F54800A720F2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		BA0136DD1F61F6E300A720F2 /* ViewController+CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+CollectionViewController.swift"; sourceTree = "<group>"; };
+		BA0136DF1F61FA2400A720F2 /* ShopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCell.swift; sourceTree = "<group>"; };
+		BA6661191F61D00E0023C003 /* MadridShops.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MadridShops.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA66611C1F61D00E0023C003 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BA66611E1F61D00E0023C003 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BA6661211F61D00E0023C003 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA6661231F61D00E0023C003 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA6661261F61D00E0023C003 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BA6661281F61D00E0023C003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA66612D1F61D00E0023C003 /* MadridShopsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MadridShopsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA6661331F61D00E0023C003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA66613F1F61D2E20023C003 /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
+		BA6661411F61D6BD0023C003 /* Shops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shops.swift; sourceTree = "<group>"; };
+		BA6661431F61DA8E0023C003 /* MadridShopsTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MadridShopsTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		BA6661441F61DA8F0023C003 /* ShopsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA6661161F61D00E0023C003 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA0136DC1F61F54800A720F2 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA66612A1F61D00E0023C003 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA0136D51F61E0F300A720F2 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				BA0136D61F61E13700A720F2 /* DownloadAllShopsInteractor.swift */,
+				BA0136D81F61EA6B00A720F2 /* DownloadAllShopsInteractorFakeImpl.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BA0136DA1F61F54800A720F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA0136DB1F61F54800A720F2 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA6661101F61D00E0023C003 = {
+			isa = PBXGroup;
+			children = (
+				BA66611B1F61D00E0023C003 /* MadridShops */,
+				BA6661301F61D00E0023C003 /* MadridShopsTests */,
+				BA66611A1F61D00E0023C003 /* Products */,
+				BA0136DA1F61F54800A720F2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BA66611A1F61D00E0023C003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA6661191F61D00E0023C003 /* MadridShops.app */,
+				BA66612D1F61D00E0023C003 /* MadridShopsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA66611B1F61D00E0023C003 /* MadridShops */ = {
+			isa = PBXGroup;
+			children = (
+				BA66611C1F61D00E0023C003 /* AppDelegate.swift */,
+				BA66613E1F61D1C70023C003 /* Model */,
+				BA66613D1F61D1B80023C003 /* View */,
+				BA66613C1F61D1A10023C003 /* Controller */,
+				BA6661231F61D00E0023C003 /* Assets.xcassets */,
+				BA6661281F61D00E0023C003 /* Info.plist */,
+			);
+			path = MadridShops;
+			sourceTree = "<group>";
+		};
+		BA6661301F61D00E0023C003 /* MadridShopsTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA6661331F61D00E0023C003 /* Info.plist */,
+				BA6661441F61DA8F0023C003 /* ShopsTests.swift */,
+				BA6661431F61DA8E0023C003 /* MadridShopsTests-Bridging-Header.h */,
+			);
+			path = MadridShopsTests;
+			sourceTree = "<group>";
+		};
+		BA66613C1F61D1A10023C003 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BA66611E1F61D00E0023C003 /* ViewController.swift */,
+				BA0136DD1F61F6E300A720F2 /* ViewController+CollectionViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BA66613D1F61D1B80023C003 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BA6661251F61D00E0023C003 /* LaunchScreen.storyboard */,
+				BA6661201F61D00E0023C003 /* Main.storyboard */,
+				BA0136DF1F61FA2400A720F2 /* ShopCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BA66613E1F61D1C70023C003 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BA0136D51F61E0F300A720F2 /* Interactor */,
+				BA66613F1F61D2E20023C003 /* Shop.swift */,
+				BA6661411F61D6BD0023C003 /* Shops.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA6661181F61D00E0023C003 /* MadridShops */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA6661361F61D00E0023C003 /* Build configuration list for PBXNativeTarget "MadridShops" */;
+			buildPhases = (
+				BA6661151F61D00E0023C003 /* Sources */,
+				BA6661161F61D00E0023C003 /* Frameworks */,
+				BA6661171F61D00E0023C003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MadridShops;
+			productName = MadridShops;
+			productReference = BA6661191F61D00E0023C003 /* MadridShops.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BA66612C1F61D00E0023C003 /* MadridShopsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA6661391F61D00E0023C003 /* Build configuration list for PBXNativeTarget "MadridShopsTests" */;
+			buildPhases = (
+				BA6661291F61D00E0023C003 /* Sources */,
+				BA66612A1F61D00E0023C003 /* Frameworks */,
+				BA66612B1F61D00E0023C003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA66612F1F61D00E0023C003 /* PBXTargetDependency */,
+			);
+			name = MadridShopsTests;
+			productName = MadridShopsTests;
+			productReference = BA66612D1F61D00E0023C003 /* MadridShopsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA6661111F61D00E0023C003 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Smartech;
+				TargetAttributes = {
+					BA6661181F61D00E0023C003 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					BA66612C1F61D00E0023C003 = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BA6661181F61D00E0023C003;
+					};
+				};
+			};
+			buildConfigurationList = BA6661141F61D00E0023C003 /* Build configuration list for PBXProject "MadridShops" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA6661101F61D00E0023C003;
+			productRefGroup = BA66611A1F61D00E0023C003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA6661181F61D00E0023C003 /* MadridShops */,
+				BA66612C1F61D00E0023C003 /* MadridShopsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA6661171F61D00E0023C003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA6661271F61D00E0023C003 /* LaunchScreen.storyboard in Resources */,
+				BA6661241F61D00E0023C003 /* Assets.xcassets in Resources */,
+				BA6661221F61D00E0023C003 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA66612B1F61D00E0023C003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA6661151F61D00E0023C003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA6661401F61D2E20023C003 /* Shop.swift in Sources */,
+				BA0136DE1F61F6E300A720F2 /* ViewController+CollectionViewController.swift in Sources */,
+				BA66611F1F61D00E0023C003 /* ViewController.swift in Sources */,
+				BA0136E01F61FA2400A720F2 /* ShopCell.swift in Sources */,
+				BA66611D1F61D00E0023C003 /* AppDelegate.swift in Sources */,
+				BA6661421F61D6BD0023C003 /* Shops.swift in Sources */,
+				BA0136D71F61E13700A720F2 /* DownloadAllShopsInteractor.swift in Sources */,
+				BA0136D91F61EA6B00A720F2 /* DownloadAllShopsInteractorFakeImpl.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA6661291F61D00E0023C003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA6661451F61DA8F0023C003 /* ShopsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BA66612F1F61D00E0023C003 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA6661181F61D00E0023C003 /* MadridShops */;
+			targetProxy = BA66612E1F61D00E0023C003 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BA6661201F61D00E0023C003 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA6661211F61D00E0023C003 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BA6661251F61D00E0023C003 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA6661261F61D00E0023C003 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA6661341F61D00E0023C003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BA6661351F61D00E0023C003 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA6661371F61D00E0023C003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6CE65434L7;
+				INFOPLIST_FILE = MadridShops/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = es.smartech.MadridShops;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BA6661381F61D00E0023C003 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6CE65434L7;
+				INFOPLIST_FILE = MadridShops/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = es.smartech.MadridShops;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BA66613A1F61D00E0023C003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6CE65434L7;
+				INFOPLIST_FILE = MadridShopsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = es.smartech.MadridShopsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MadridShopsTests/MadridShopsTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MadridShops.app/MadridShops";
+			};
+			name = Debug;
+		};
+		BA66613B1F61D00E0023C003 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6CE65434L7;
+				INFOPLIST_FILE = MadridShopsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = es.smartech.MadridShopsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MadridShopsTests/MadridShopsTests-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MadridShops.app/MadridShops";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA6661141F61D00E0023C003 /* Build configuration list for PBXProject "MadridShops" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA6661341F61D00E0023C003 /* Debug */,
+				BA6661351F61D00E0023C003 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA6661361F61D00E0023C003 /* Build configuration list for PBXNativeTarget "MadridShops" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA6661371F61D00E0023C003 /* Debug */,
+				BA6661381F61D00E0023C003 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA6661391F61D00E0023C003 /* Build configuration list for PBXNativeTarget "MadridShopsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA66613A1F61D00E0023C003 /* Debug */,
+				BA66613B1F61D00E0023C003 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA6661111F61D00E0023C003 /* Project object */;
+}
