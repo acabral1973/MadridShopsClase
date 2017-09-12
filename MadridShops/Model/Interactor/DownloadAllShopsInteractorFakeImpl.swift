@@ -19,7 +19,7 @@ class DownloadAllShopsInteractorFakeImpl: DownloadAllShopsInteractorProtocol {
         
         for i in 0...10 {
             let shop = Shop(name: "Shop number \(i)")
-            shop.address = "Adress \(i)"
+            shop.address = "Address \(i)"
             
             shops.add(shop: shop)
         }

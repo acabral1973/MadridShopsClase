@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let downloadShopsInteractor: DownloadAllShopsInteractorProtocol = DownloadAllShopsInteractorFakeImpl()
+        let downloadShopsInteractor: DownloadAllShopsInteractorProtocol = DownloadAllShopsInteractorNSOpImpl()
         downloadShopsInteractor.execute(onSuccess: { (shops: Shops) in
             // Código para cuando va bien el proceso
             self.shops = shops
